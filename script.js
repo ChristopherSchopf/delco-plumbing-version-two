@@ -219,18 +219,25 @@ window.addEventListener('scroll', () => {
 // ============================================
 // Scroll Animations (Fade In with Stagger)
 // ============================================
+// More mobile-friendly observer options
+const isMobile = window.innerWidth <= 768;
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: isMobile ? 0.05 : 0.1,
+    rootMargin: isMobile ? '0px 0px 0px 0px' : '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            // Unobserve after animation to improve performance
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
+
+// Fallback: Show elements immediately if IntersectionObserver isn't supported
+const hasIntersectionObserver = 'IntersectionObserver' in window;
 
 // Observe all sections and cards for fade-in animation
 document.addEventListener('DOMContentLoaded', () => {
@@ -257,6 +264,12 @@ document.addEventListener('DOMContentLoaded', () => {
     elementsToAnimate.forEach((element, index) => {
         element.classList.add('fade-in');
         
+        // If IntersectionObserver isn't supported, show immediately
+        if (!hasIntersectionObserver) {
+            element.classList.add('visible');
+            return;
+        }
+        
         // Add stagger delay for testimonials
         if (element.classList.contains('testimonial-card')) {
             const cardIndex = Array.from(document.querySelectorAll('.testimonial-card')).indexOf(element);
@@ -277,6 +290,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
         observer.observe(element);
     });
+    
+    // Fallback for mobile: If elements haven't been observed after a short delay, make them visible
+    // This handles cases where IntersectionObserver might not trigger properly
+    setTimeout(() => {
+        elementsToAnimate.forEach(element => {
+            if (!element.classList.contains('visible')) {
+                element.classList.add('visible');
+            }
+        });
+    }, 500);
 });
 
 // ============================================
