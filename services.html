@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delco Plumbing - Full range of professional plumbing services in Delaware County, Pennsylvania. From drain cleaning to water heater installation.">
+    <title>Services - Delco Plumbing | Professional Plumbing Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">Delco Plumbing</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Floating Action Button -->
+    <a href="tel:610-534-4233" class="fab" aria-label="Call Now">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">Delco Plumbing</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-services">
+        <div class="hero-overlay"></div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="word">Services</span>
+                </h1>
+                <p class="hero-subtitle">Offering a full range of dependable plumbing services to keep your home or business running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="services-intro">
+        <div class="container">
+            <h2 class="section-title">Delaware County, Pennsylvania Plumbing Services</h2>
+            <p class="section-description">
+                Our professional plumbing services cover everything from routine maintenance and emergency repairs to installations and system upgrades. Whether you're dealing with a leaky faucet, a clogged drain, or need a new water heater installed, our skilled plumbers are here to provide efficient, reliable solutions tailored to your needs. We pride ourselves on prompt service, quality workmanship, and fair pricing to keep your home's plumbing running smoothly year-round.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid-section">
+        <div class="container">
+            <h2 class="section-title">Residential Plumbing Services</h2>
+            <div class="services-grid">
+                <!-- Drain Cleaning -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                            <path d="M12 7v6"></path>
+                            <path d="M9 10h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Drain Cleaning</h3>
+                    <p class="service-description">
+                        Keep your pipes flowing freely with our professional drain cleaning services, designed to tackle stubborn clogs and prevent future blockages.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Home Appliances -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M6 8h12"></path>
+                            <path d="M6 12h12"></path>
+                            <path d="M6 16h8"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Home Appliances</h3>
+                    <p class="service-description">
+                        Keep your home running smoothly with our professional appliance installation and repair services, ensuring your kitchen and laundry appliances work efficiently and reliably.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Toilet Repairs -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 3h14a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+                            <path d="M9 3v18"></path>
+                            <path d="M15 3v18"></path>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Toilet Repairs</h3>
+                    <p class="service-description">
+                        From quick repairs to full replacements, our toilet services ensure reliable performance and comfort for every bathroom in your home.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Water Leaks -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                            <path d="M12 2v20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Water Leaks</h3>
+                    <p class="service-description">
+                        Protect your property, stay safe, and save on monthly utility costs with our fast and effective water leak detection and repair services.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Garbage Disposals -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 12h8"></path>
+                            <path d="M12 8v8"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Garbage Disposals</h3>
+                    <p class="service-description">
+                        Upgrade to a powerful, dependable garbage disposal with our seamless replacement services, ensuring your kitchen stays clean and efficient.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Water Heater -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Water Heater</h3>
+                    <p class="service-description">
+                        Stay comfortable year-round with our expert water heater services, from efficient repairs to full replacements, tailored to meet your hot water needs.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Tankless Water Heaters -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M6 8h12"></path>
+                            <path d="M6 12h12"></path>
+                            <path d="M6 16h8"></path>
+                            <circle cx="18" cy="6" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Tankless Water Heaters</h3>
+                    <p class="service-description">
+                        Experience endless hot water, greater comfort, and significant energy savings with our professional tankless water heater installation, maintenance, and repair services.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Frozen Pipes -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Frozen Pipes</h3>
+                    <p class="service-description">
+                        Prevent costly damage and disruptions with our expert frozen pipe services, ensuring your pipes stay clear and protected during the coldest months.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Sewer Repairs -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <path d="M12 2v8"></path>
+                            <path d="M8 6h8"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Sewer Repairs</h3>
+                    <p class="service-description">
+                        Trust our experienced team for reliable sewer repair services, addressing issues quickly to prevent further damage and restore your system's functionality.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Sewer Root Removal -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Sewer Root Removal</h3>
+                    <p class="service-description">
+                        Eliminate blockages and prevent future damage with our professional sewer root removal services, ensuring your pipes remain clear and free-flowing.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Hydro Jetting -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <path d="M12 2v8"></path>
+                            <path d="M8 6h8"></path>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Hydro Jetting</h3>
+                    <p class="service-description">
+                        Clear stubborn clogs and restore optimal flow with our powerful hydro jetting service, using high-pressure water to clean your pipes thoroughly and efficiently.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+
+                <!-- Sump Pumps -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            <path d="M12 2l-2 2 2 2 2-2-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Sump Pumps</h3>
+                    <p class="service-description">
+                        Protect your home from water damage with our professional sump pump installation services, designed to keep your basement dry and safe during heavy rains.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">Get An Estimate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="cta-title">Get Your Plumbing Issue Solved Today!</h2>
+            <p class="cta-subtitle">From leaky pipes to hot water installation, we can take care of all your plumbing needs.</p>
+            <a href="index.html#contact" class="btn btn-primary btn-large">Get A Free Estimate!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Browse</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Leak Repair</a></li>
+                        <li><a href="services.html">Drain Cleaning</a></li>
+                        <li><a href="services.html">Home Appliances</a></li>
+                        <li><a href="services.html">Hot Water Heater Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:contact@delcoplumbing.com">contact@delcoplumbing.com</a></li>
+                        <li><a href="tel:610-534-4233">610-534-4233</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Yelp">⭐</a>
+                        <a href="#" class="social-icon" aria-label="Google Maps">📍</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2024 - All Rights Reserved</p>
+                <p><a href="#" class="footer-link">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

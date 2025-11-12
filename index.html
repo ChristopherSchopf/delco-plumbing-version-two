@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delco Plumbing - Fast, friendly, and professional plumbing services. From repairs to installations, dependable service you can trust.">
+    <title>Delco Plumbing - Professional Plumbing Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">Delco Plumbing</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Floating Action Button -->
+    <a href="tel:610-534-4233" class="fab" aria-label="Call Now">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">Delco Plumbing</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="word">Fast,</span>
+                    <span class="word">Friendly,</span>
+                    <span class="word">and</span>
+                    <span class="word">Professional</span>
+                    <span class="word">Plumbing</span>
+                </h1>
+                <p class="hero-subtitle">From Repairs to Installations, Dependable Service You Can Trust</p>
+                <a href="#contact" class="btn btn-primary btn-pulse">Schedule An Appointment</a>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="check-icon">✔</span>
+                        <span>One of our technicians will come to your home.</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-icon">✔</span>
+                        <span>You'll receive a free estimate and a thorough service plan.</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-icon">✔</span>
+                        <span>We'll solve your problem quickly so you can get back to your day.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hour Service</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Service Area</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4"></path>
+                        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+                        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+                        <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
+                        <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
+                    </svg>
+                    <span>Licensed & Insured</span>
+                </div>
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5"></path>
+                        <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span>BBB Rated</span>
+                </div>
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>100% Satisfaction</span>
+                </div>
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>Same Day Service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="services-overview">
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <p class="section-description">
+                We offer a full range of plumbing services designed to address all your needs, whether it's a minor repair or a major installation. From fixing leaks and unclogging drains to installing water heaters and performing system inspections, our team is equipped with the expertise and tools to handle any job with precision and care. We're committed to providing fast, reliable service with upfront pricing, so you always know what to expect. With our experienced plumbers, you can trust that your home's plumbing system is in safe hands, ensuring comfort and functionality for years to come.
+            </p>
+        </div>
+    </section>
+
+    <!-- Signature Services -->
+    <section class="signature-services">
+        <div class="container">
+            <h2 class="section-title">Signature Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Leak Repair</h3>
+                    <p class="service-description">
+                        At Delco Plumbing, we understand that even a small leak can lead to big problems. Leaks not only waste water and raise utility bills, but they can also cause costly damage to walls, floors, and foundations if left untreated. Our skilled technicians use advanced tools to quickly locate and repair leaks, ensuring your plumbing system runs efficiently and your home stays safe.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                            <path d="M12 7v6"></path>
+                            <path d="M9 10h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Drain Cleaning & Clog Removal</h3>
+                    <p class="service-description">
+                        Clogged drains are a common, frustrating problem that can disrupt your daily routine. At Delco Plumbing, we specialize in efficient, thorough drain cleaning and clog removal for everything from kitchen sinks to shower drains. We handle each job with care to ensure your drains flow freely, reducing the risk of backups, unpleasant odors, and potential pipe damage.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Water Heater Repair & Installation</h3>
+                    <p class="service-description">
+                        Reliable hot water is essential for a comfortable home, and at Delco Plumbing, we're here to make sure your water heater works when you need it. Whether your current system needs a quick repair or you're ready to upgrade to a more energy-efficient model, our team has you covered. We diagnose and fix common issues like inconsistent heating, strange noises, and leaks, extending the life of your unit whenever possible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Who We Are</h2>
+                <h3 class="about-subtitle">Your Local Plumbing Experts</h3>
+                <p class="about-text">
+                    At Delco Plumbing, we believe in providing honest and reliable plumbing services that our community can trust. With over a decade of experience, our dedicated team of licensed professionals is committed to delivering top-notch workmanship and personalized customer care. From quick response times to transparent pricing, we strive to make every service call as stress-free and straightforward as possible.
+                </p>
+                <p class="about-text">
+                    Whether it's a leaky faucet, a clogged drain, or a complete plumbing installation, we handle every job with the same level of care and attention to detail. Using only the highest quality materials and the latest techniques, we ensure every repair or installation meets our strict standards for excellence. Our goal is to ensure your home runs smoothly, allowing you to focus on what truly matters. Choose Delco Plumbing for dependable service and peace of mind, every time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Others Have To Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        So glad I called Delco Plumbing! They were quick, super friendly, and didn't try to upsell me on anything. They fixed my clogged drain way faster than I expected, and everything's been working perfectly since. Great local service - I'll be using them from now on.
+                    </p>
+                    <div class="testimonial-author">Rachel T.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        I was really worried I wouldn't have hot water for a while after my hot water heater went down, but they got me up and running the same day I called them. I recommend them to all my friends now.
+                    </p>
+                    <div class="testimonial-author">Samantha McConnell</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        Delco Plumbing was awesome to work with! They showed up right on time, got straight to the issue, and had my leaky sink fixed up fast. Really honest, straightforward service. I'd definitely call them again.
+                    </p>
+                    <div class="testimonial-author">Jason Mathhews</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How To Work With Us</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Schedule A Visit</h3>
+                    <p class="step-description">Call (610)-534-4233 or book a visit online today.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Get A Free Estimate</h3>
+                    <p class="step-description">Get a free estimate from one of our experienced plumbers.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Problem Solved</h3>
+                    <p class="step-description">We solve your plumbing issue so you can get back to your life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="cta-title">Get Your Plumbing Issue Solved Today!</h2>
+            <p class="cta-subtitle">From leaky pipes to hot water installation, we can take care of all your plumbing needs.</p>
+            <a href="#contact" class="btn btn-primary btn-large">Get A Free Estimate!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Browse</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Leak Repair</a></li>
+                        <li><a href="services.html">Drain Cleaning</a></li>
+                        <li><a href="services.html">Home Appliances</a></li>
+                        <li><a href="services.html">Hot Water Heater Replacement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:contact@delcoplumbing.com">contact@delcoplumbing.com</a></li>
+                        <li><a href="tel:610-534-4233">610-534-4233</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Yelp">⭐</a>
+                        <a href="#" class="social-icon" aria-label="Google Maps">📍</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2024 - All Rights Reserved</p>
+                <p><a href="#" class="footer-link">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
